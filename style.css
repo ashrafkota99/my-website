@@ -1,0 +1,188 @@
+body {
+    background-color: rgb(223, 234, 149);
+    font-family: sans-serif;
+    text-align: center;
+}
+/* img */
+img {
+    border-radius: 50%;
+    border: 3px solid rgb(136, 4, 4);
+}
+/* headings */
+h3 {
+    color: #7d0404;
+}
+
+h1 {
+    color: #054579;
+}
+/* Dark Mode Button */
+#darkBtn {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#darkBtn:hover {
+    background-color: #444;
+}
+
+/* Dark Mode - لما الموقع يقلب أسود */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode .box {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark-mode h1,
+body.dark-mode h3,
+body.dark-mode p {
+    color: white;
+}
+
+body.dark-mode td {
+    color: white;
+    border-color: #555;
+}
+/* ul&li */
+ul {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+    list-style-position: inside;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+/* link */
+a {
+    text-decoration: none;
+    color: white;
+    background-color: #054579;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+/* hover */
+a:hover {
+    background-color: #45b722;
+}
+
+/* box class */
+.box {
+    background-color: rgb(246, 248, 241);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+}
+/* tables */
+table {
+    margin: auto;
+    border: 1px solid rgb(52, 54, 32);
+}
+
+td {
+    border: 1px solid rgb(41, 41, 27);
+    padding: 10px;
+}
+
+/* Skills */
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px auto 15px auto;
+    width: 80%;
+}
+
+.skill-fill {
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.skill-fill.html {
+     width: 90%; background-color: #e34c26;
+     }
+.skill-fill.css {
+     width: 80%; background-color: #264de4;
+     }
+.skill-fill.js {
+     width: 50%; background-color: #f0db4f; color: #222;
+     }
+
+/* forms */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    width: auto;
+    padding: 20px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    height: 100px;
+}
+input:hover {
+    background-color: rgb(240, 240, 82);
+}
+textarea:hover {
+    background-color: rgb(240, 240, 82);
+}
+
+button {
+    background-color: rgb(244, 102, 109);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: green;
+}
+p {
+    color: rgb(70, 6, 6);
+    font-size: 18px;
+}
+
+/* للموبايل */
+@media (max-width: 600px) {
+    .box {
+        width: 95%;
+        padding: 10px;
+    }
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+    img {
+        width: 150px;
+    }
+    input, textarea, .skill-bar {
+        width: 95%;
+    }
+}

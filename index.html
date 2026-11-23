@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ashraf mahmoud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="ashraf.jpeg" alt="ashraf mahmoud" height="200" width="200">
+    <h1>ashraf mahmoud</h1>
+
+    <button id="darkBtn">🌙 Dark Mode</button>
+    <hr>
+    <h3>Frontend Developer / Learning Journey</h3>
+    <p>
+        ashraf mahmoud has an experience in frontend development<br>
+        and he is learning journey to be a full stack developer<br>
+        and he is love playing football and he is a fan of barcelona club<br>
+        and he is a fan of mohamed salah and messi as a players.
+    </p>
+    <hr>
+    <ul>
+        <li>skills
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <a href="https://www.facebook.com/ashraf_th2000" target="_blank">Facebook</a>
+    <br>
+    <a href="https://www.github.com/ashrafkota99" target="_blank">GitHub</a>
+    <br>
+    <a href="mailto:ashrafkota99@gmail.com" target="_blank">Email</a>
+    <hr>
+    <div class="box">
+        <h3>My Experience</h3>
+        <table>
+            <tr>
+                <td>2024</td>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>2025</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>2026</td>
+                <td>JavaScript</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div class="box">
+        <h3>My Skills</h3>
+        <p>HTML</p>
+        <div class="skill-bar">
+            <div class="skill-fill html">90%</div>
+        </div>
+        <p>CSS</p>
+        <div class="skill-bar">
+            <div class="skill-fill css">80%</div>
+        </div>
+        <p>JavaScript</p>
+        <div class="skill-bar">
+            <div class="skill-fill js">60%</div>
+        </div>
+    </div>
+    <hr>
+    <div class="box">
+        <h3>Contact Me</h3>
+        <form id="contactForm">
+            <label>Your Name</label>
+            <input type="text" placeholder="Your Name" required>
+            <label>Your Email</label>
+            <input type="email" placeholder="Your Email" required>
+            <label>Your Message</label>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+            <p id="successMsg"></p>
+        </form>
+    </div>
+    <hr>
+    <p> "All rights reserved by Ashraf Mahmoud © 2026" </p>
+    <script>
+        let myForm = document.getElementById("contactForm");
+        let msg = document.getElementById("successMsg");
+
+        myForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            msg.textContent = "شكراً! رسالتك وصلت يا بطل ❤️";
+            msg.style.color = "green";
+            msg.style.fontWeight = "bold";
+            myForm.reset();
+        });
+        let darkBtn = document.getElementById("darkBtn");
+
+        darkBtn.addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                darkBtn.textContent = "☀️ Light Mode";
+            } else {
+                darkBtn.textContent = "🌙 Dark Mode";
+            }
+        });
+    </script>
+</body>
+
+</html>
