@@ -9,20 +9,50 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="logo">Ashraf Kota</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
     <img src="ashraf.jpeg" alt="ashraf mahmoud" height="200" width="200">
     <h1>ashraf mahmoud</h1>
 
     <button id="darkBtn">🌙 Dark Mode</button>
     <hr>
-    <h3>Frontend Developer / Learning Journey</h3>
-    <p>
-        ashraf mahmoud has an experience in frontend development<br>
-        and he is learning journey to be a full stack developer<br>
-        and he is love playing football and he is a fan of barcelona club<br>
-        and he is a fan of mohamed salah and messi as a players.
-    </p>
+    <h2 id="about">About Me</h2>
+    <div class="box">
+        <p> I am Ashraf Mahmoud, a holder of a bachelor’s degree in Computer Science,<br>
+            with an interest in programming and web development,<br>
+            I enjoy learning new technologies and sharing my knowledge with others,<br>
+            I have an experience in frontend development,<br>
+            I am a learning journey to be a full stack developer,<br>
+            I am love playing football & a fan of barcelona club,<br>
+            I am a fan of mohamed salah and messi as a players.
+        </p>
+    </div>
     <hr>
-    <ul>
+    <h2 id="skills">Skills</h2>
+    <div class="box">
+        <p>HTML</p>
+        <div class="skill-bar">
+            <div class="skill-fill html">90%</div>
+        </div>
+        <p>CSS</p>
+        <div class="skill-bar">
+            <div class="skill-fill css">80%</div>
+        </div>
+        <p>JavaScript</p>
+        <div class="skill-bar">
+            <div class="skill-fill js">60%</div>
+        </div>
+    </div>
+    <hr>
+    <!-- <ul>
         <li>skills
             <ul>
                 <li>html</li>
@@ -30,16 +60,11 @@
                 <li>javascript</li>
             </ul>
         </li>
-    </ul>
-    <hr>
-    <a href="https://www.facebook.com/ashraf_th2000" target="_blank">Facebook</a>
-    <br>
-    <a href="https://www.github.com/ashrafkota99" target="_blank">GitHub</a>
-    <br>
-    <a href="mailto:ashrafkota99@gmail.com" target="_blank">Email</a>
-    <hr>
+    </ul> -->
+
+    <h2 id="experience">Experience</h2>
+
     <div class="box">
-        <h3>My Experience</h3>
         <table>
             <tr>
                 <td>2024</td>
@@ -56,24 +81,9 @@
         </table>
     </div>
     <hr>
+
     <div class="box">
-        <h3>My Skills</h3>
-        <p>HTML</p>
-        <div class="skill-bar">
-            <div class="skill-fill html">90%</div>
-        </div>
-        <p>CSS</p>
-        <div class="skill-bar">
-            <div class="skill-fill css">80%</div>
-        </div>
-        <p>JavaScript</p>
-        <div class="skill-bar">
-            <div class="skill-fill js">60%</div>
-        </div>
-    </div>
-    <hr>
-    <div class="box">
-        <h3>My Projects</h3>
+        <h2 id="projects">My Projects</h2>
         <div class="projects">
 
             <div class="project-card">
@@ -97,9 +107,15 @@
         </div>
     </div>
     <hr>
-
+    <h2 id="contact">Contact Me</h2>
     <div class="box">
-        <h3>Contact Me</h3>
+        <div class="contact-links">
+            <a href="https://www.facebook.com/ashraf_th2000" target="_blank">Facebook</a>
+            <br>
+            <a href="https://www.github.com/ashrafkota99" target="_blank">GitHub</a>
+            <br>
+            <a href="mailto:ashrafkota99@gmail.com" target="_blank">Email</a>
+        </div>
         <form id="contactForm">
             <label>Your Name</label>
             <input type="text" placeholder="Your Name" required>
