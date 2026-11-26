@@ -7,6 +7,7 @@ body {
 img {
     border-radius: 50%;
     border: 3px solid rgb(136, 4, 4);
+    margin: 20px;
 }
 /* headings */
 h3 {
@@ -74,6 +75,15 @@ a {
     border-radius: 5px;
     margin: 5px;
     display: inline-block;
+}
+.contact-links a {
+    text-decoration: none;
+    color: white;
+    background-color: #054579;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    display: block;
 }
 /* hover */
 a:hover {
@@ -219,4 +229,34 @@ p {
     input, textarea, .skill-bar {
         width: 95%;
     }
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #25D366;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #25D366;
 }
